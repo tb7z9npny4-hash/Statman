@@ -4,107 +4,218 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Stat Man | Football Stats & Analysis</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #333;
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .social {
+            font-size: 1rem;
+            color: #888;
+        }
+
+        .social a {
+            color: #e63946;
+            text-decoration: none;
+        }
+
+        .social a:hover {
+            text-decoration: underline;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            margin: 40px 0 30px 0;
+            color: #333;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 40px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .post {
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .post:last-child {
+            border-bottom: none;
+        }
+
+        .post-meta {
+            font-size: 0.9rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .post-title {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .post-title a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .post-title a:hover {
+            color: #e63946;
+        }
+
+        .post-excerpt {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            color: #e63946;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #ddd;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #e63946;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .post-title {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="noise-bg"></div>
-    
-    <header class="header">
-        <div class="container">
-            <div class="header-grid">
-                <div class="brand">
-                    <h1 class="logo">THE STAT MAN</h1>
-                    <p class="tagline">Football Statistics & Tactical Analysis</p>
-                </div>
-                <div class="social-link">
-                    <a href="https://x.com/stat_man2" target="_blank" class="x-link">@stat_man2</a>
-                </div>
-            </div>
+    <div class="container">
+        <div class="header">
+            <h1>THE STAT MAN</h1>
+            <p class="tagline">Football Statistics & Tactical Analysis</p>
+            <p class="social"><a href="https://x.com/stat_man2">@stat_man2</a></p>
         </div>
-    </header>
 
-    <main class="main-content">
-        <div class="container">
-            <section class="intro-section">
-                <h2 class="section-heading">Latest Analysis</h2>
-                <p class="intro-text">Deep-dive statistical breakdowns on any club, any player. Tag me on X for custom stat requests.</p>
-            </section>
+        <div class="content">
+            <h2>Latest Analysis</h2>
+            <p class="intro">Deep-dive statistical breakdowns on any club, any player. Tag me on X for custom stat requests.</p>
 
-            <div class="articles-grid">
-                
-                <!-- Latest Article - Liverpool Season Analysis -->
-                <article class="article-card">
-                    <div class="article-meta">
-                        <span class="article-date">January 31, 2026</span>
-                        <span class="article-category">Season Analysis</span>
-                    </div>
-                    <h3 class="article-title">
-                        <a href="liverpool-season-analysis.html">The Illusion of Progress: How Liverpool's Season Fell Apart in Four Weeks</a>
-                    </h3>
-                    <p class="article-excerpt">
-                        Five wins in five games. Title contenders. Then everything collapsed. 36 points from 23 matches, projected 59 for the season, 1.39 goals conceded per match. A comprehensive statistical breakdown of Liverpool's 2025-26 season through three distinct acts: the dream start, the catastrophic four-game losing streak that ended the title race by October, and the mediocre plateau that followed.
-                    </p>
-                    <a href="liverpool-season-analysis.html" class="read-more">Read Full Analysis →</a>
-                </article>
-                
-                <!-- Second Article - Arsenal vs Man Utd -->
-                <article class="article-card">
-                    <div class="article-meta">
-                        <span class="article-date">January 19, 2025</span>
-                        <span class="article-category">Match Analysis</span>
-                    </div>
-                    <h3 class="article-title">
-                        <a href="arsenal-united-analysis.html">Efficiency Beats Volume: Arsenal 2–3 Man Utd</a>
-                    </h3>
-                    <p class="article-excerpt">
-                        Arsenal had 56% possession, 1.20 xG, and 15 shots. United had 44% possession, 0.73 xG, and 10 shots. Final score: 3–2 to United. When the margins are this fine, efficiency trumps volume every time. A statistical breakdown of fine margins at the Emirates.
-                    </p>
-                    <a href="arsenal-united-analysis.html" class="read-more">Read Full Analysis →</a>
-                </article>
-                
-                <!-- Second Article - Bournemouth Analysis -->
-                <article class="article-card">
-                    <div class="article-meta">
-                        <span class="article-date">January 18, 2025</span>
-                        <span class="article-category">Match Analysis</span>
-                    </div>
-                    <h3 class="article-title">
-                        <a href="bournemouth-analysis.html">Heartbreak at the Vitality: Bournemouth 3–2 Liverpool</a>
-                    </h3>
-                    <p class="article-excerpt">
-                        Liverpool's 13-game unbeaten run ended in dramatic fashion. 67% possession, 534 passes, 11 corners—yet only 1 big chance and 0.83 xG. Bournemouth created 6 big chances from 33% possession. A statistical breakdown of where it went wrong.
-                    </p>
-                    <a href="bournemouth-analysis.html" class="read-more">Read Full Analysis →</a>
-                </article>
+            <article class="post">
+                <div class="post-meta">February 17, 2026<br>Match Analysis</div>
+                <h3 class="post-title"><a href="liverpool-brighton-analysis.html">Liverpool 3-0 Brighton: Why Liverpool Suddenly Clicked</a></h3>
+                <p class="post-excerpt">Brighton had 53% possession, 18 shots, and 1.29 xG. Liverpool had 47% possession, 13 shots, and 2.00 xG. Final score: 3-0 to Liverpool. When the margins matter most, clinical efficiency beats statistical volume. A comprehensive breakdown of Liverpool's FA Cup performance showing Salah's masterclass, Brighton's discipline collapse, and the tactical factors that made Liverpool suddenly click after recent poor form.</p>
+                <a href="liverpool-brighton-analysis.html" class="read-more">Read Full Analysis →</a>
+            </article>
 
-                <!-- Third Article - Liverpool Tactical Analysis -->
-                <article class="article-card">
-                    <div class="article-meta">
-                        <span class="article-date">January 18, 2025</span>
-                        <span class="article-category">Tactical Analysis</span>
-                    </div>
-                    <h3 class="article-title">
-                        <a href="liverpool-analysis.html">The Gilded Cage: Liverpool's Sterile Domination</a>
-                    </h3>
-                    <p class="article-excerpt">
-                        Liverpool dominate possession, territory, and shots—yet matches end in frustration. Under Arne Slot, control has brought sterility. An analysis of the diamond problem, pressing regression, and why 73% possession against Burnley still ended 1–1.
-                    </p>
-                    <a href="liverpool-analysis.html" class="read-more">Read Full Analysis →</a>
-                </article>
+            <article class="post">
+                <div class="post-meta">January 31, 2026<br>Season Analysis</div>
+                <h3 class="post-title"><a href="liverpool-season-analysis.html">The Illusion of Progress: How Liverpool's Season Fell Apart in Four Weeks</a></h3>
+                <p class="post-excerpt">Five wins in five games. Title contenders. Then everything collapsed. 36 points from 23 matches, projected 59 for the season, 1.39 goals conceded per match. A comprehensive statistical breakdown of Liverpool's 2025-26 season through three distinct acts: the dream start, the catastrophic four-game losing streak that ended the title race by October, and the mediocre plateau that followed.</p>
+                <a href="liverpool-season-analysis.html" class="read-more">Read Full Analysis →</a>
+            </article>
 
-            </div>
+            <article class="post">
+                <div class="post-meta">January 19, 2025<br>Match Analysis</div>
+                <h3 class="post-title"><a href="arsenal-united-analysis.html">Efficiency Beats Volume: Arsenal 2–3 Man Utd</a></h3>
+                <p class="post-excerpt">Arsenal had 56% possession, 1.20 xG, and 15 shots. United had 44% possession, 0.73 xG, and 10 shots. Final score: 3–2 to United. When the margins are this fine, efficiency trumps volume every time. A statistical breakdown of fine margins at the Emirates.</p>
+                <a href="arsenal-united-analysis.html" class="read-more">Read Full Analysis →</a>
+            </article>
+
+            <article class="post">
+                <div class="post-meta">January 18, 2025<br>Match Analysis</div>
+                <h3 class="post-title"><a href="bournemouth-analysis.html">Heartbreak at the Vitality: Bournemouth 3–2 Liverpool</a></h3>
+                <p class="post-excerpt">Liverpool's 13-game unbeaten run ended in dramatic fashion. 67% possession, 534 passes, 11 corners—yet only 1 big chance and 0.83 xG. Bournemouth created 6 big chances from 33% possession. A statistical breakdown of where it went wrong.</p>
+                <a href="bournemouth-analysis.html" class="read-more">Read Full Analysis →</a>
+            </article>
+
+            <article class="post">
+                <div class="post-meta">January 18, 2025<br>Tactical Analysis</div>
+                <h3 class="post-title"><a href="liverpool-analysis.html">The Gilded Cage: Liverpool's Sterile Domination</a></h3>
+                <p class="post-excerpt">Liverpool dominate possession, territory, and shots—yet matches end in frustration. Under Arne Slot, control has brought sterility. An analysis of the diamond problem, pressing regression, and why 73% possession against Burnley still ended 1–1.</p>
+                <a href="liverpool-analysis.html" class="read-more">Read Full Analysis →</a>
+            </article>
         </div>
-    </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-text">The Stat Man © 2025 | All statistics sourced and verified</p>
-            <p class="footer-social">Follow on X: <a href="https://x.com/stat_man2" target="_blank">@stat_man2</a></p>
+        <div class="footer">
+            <p>The Stat Man © 2025 | All statistics sourced and verified</p>
+            <p>Follow on X: <a href="https://x.com/stat_man2">@stat_man2</a></p>
         </div>
-    </footer>
-
+    </div>
 </body>
 </html>
